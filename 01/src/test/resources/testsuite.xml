@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UI Automation Test" parallel="false" thread-count="1" >
+    <test name="UI Cucumber Test">
+    	<parameter name="browser.type" value="chrome"/>
+        <classes>
+            <class name="com.sample.dl.cucumber.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
+<!--<suite name="53799427_suite" parallel="false" verbose="2">-->
+<!--<method-selectors>-->
+<!--    <method-selector>-->
+<!--        <script language="beanshell">-->
+<!--            <![CDATA[-->
+<!--                whatGroup = System.getProperty("group");-->
+<!--                shouldRun = Arrays.equals(new String[]{whatGroup}, testngMethod.getGroups());-->
+<!--                return shouldRun;-->
+<!--        ]]>-->
+<!--        </script>-->
+<!--    </method-selector>-->
+<!--</method-selectors>-->
+<!--<test name="53799427_test">-->
+<!--    <classes>-->
+<!--        <class name="com.rationaleemotions.stackoverflow.qn53799427.TestClassSample"/>-->
+<!--    </classes>-->
+<!--</test>-->
+<!--</suite>-->
